@@ -1,0 +1,32 @@
+// Drawable interface
+interface Drawable {
+    void draw();
+}
+
+// Circle class implementing Drawable
+class Circle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a circle");
+    }
+}
+
+// Rectangle class implementing Drawable
+class Rectangle implements Drawable {
+    @Override
+    public void draw() {
+        System.out.println("Drawing a rectangle");
+    }
+}
+
+// Example usage
+public class Main {
+    public static void main(String[] args) {
+        Drawable circle = new Circle();
+        Drawable rectangle = new Rectangle();
+
+        circle.draw();     // Output: Drawing a circle
+        rectangle.draw();  // Output: Drawing a rectangle
+    }
+}
+
